@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinhos DOMEUPAI</title>
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="cabecalho">
+      <a href="/" class="logo" aria-label="Página inicial">
+        <img
+          src="imagens/logoletras-titulo-branco.svg"
+          width="180"
+          alt="Logótipo do vinho 'Do Meu Pai' em branco com fundo transparente"
+        />
+      </a>
+      <!-- Hamburger menu -->
+      <button
+        class="menu-toggle"
+        aria-controls="menu-principal"
+        aria-expanded="false"
+        aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- Menu principal -->
+      <nav
+        id="menu-principal"
+        class="navPrincipal"
+        aria-label="Navegação Principal">
+        <ul>
+          <li>
+            <a href="#sobreNos" class="menu-link">Sobre Nós</a>
+          </li>
+          <li>
+            <a href="#galeriaProdutos" class="menu-link">Produtos</a>
+          </li>
+          <li>
+            <a href="#contactos" class="menu-link">Contactos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- LANDING PAGE -->
+      <section id="intro">
+        <!-- Imagem Hero - talvez seja trocada por foto da garrafa DOMEUPAI -->
+        <img
+          class="heroImg"
+          src="imagens/wine-hero-img.jpg"
+          alt="Servir vinho tinto de uma garrafa para um copo de vidro, com um fundo escuro"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <!-- Logo -->
+        <img
+          class="logo-branco"
+          src="imagens/logo-branco.svg"
+          alt="Logótipo do vinho 'Do Meu Pai' em branco com fundo transparente"
+        />
+        <!-- Texto / Hook -->
+        <div class="hook">
+          <h1>
+            Descobre mais sobre <br />
+            os nossos vinhos
+          </h1>
+          <!-- CTA -->
+          <a href="#sobreNos" class="botao">Sobre nós</a>
+        </div>
+      </section>
+      <!-- SOBRE NÓS -->
+      <section id="sobreNos">
+        <!-- Imagem ilustrativa dos produtos da Casa Natário -->
+        <img
+          class="imgSobreNos"
+          src="imagens/sobre-nos-caixas-natario.jpeg"
+          alt="Garrafas de Vinho da Casa Natário e caixas de madeira com o logótipo da marca"
+        />
+        <!-- Títulos -->
+        <div class="textoSobreNos">
+          <h2>Casa Natário</h2>
+          <p class="subtitulo">Sobre Nós</p>
+          <!-- Texto simulado sobre a Casa Natário -->
+          <p class="texto">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+            aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+            imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+            mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+            semper nisi. Aenean vulputate eleifend tellus.
+          </p>
+        </div>
+      </section>
+      <!-- Efeito Parallax para criar efeito de profundidade com imagem decorativa -->
+      <div class="parallax" aria-hidden="true"></div>
+      <!-- GALERIA DE PRODUTOS -->
+      <section id="galeriaProdutos">
+        <h3>Os Nossos Produtos</h3>
+        <div class="produtosContainer">
+          <!-- 'Stock Photos' até ter as imagens reais -->
+          <figure class="produtoCard">
+            <img
+              class="produtoImg"
+              src="imagens/pexels-brettjordan-19030980-thumbnail.jpg"
+              alt="Garrafa de Vinho Branco 1 com copo de vidro em frente a uma parede de tijolo."
+            />
+            <figcaption class="produtoCaption">
+              Garrafa de Vinho Branco 1
+            </figcaption>
+          </figure>
+          <figure class="produtoCard">
+            <img
+              class="produtoImg"
+              src="imagens/pexels-brettjordan-19419131-thumbnail.jpg"
+              alt="Garrafa de Vinho Tinto 1 com copo de vidro em frente a uma parede de tijolo."
+            />
+            <figcaption class="produtoCaption">
+              Garrafa de Vinho Tinto 1
+            </figcaption>
+          </figure>
+          <figure class="produtoCard">
+            <img
+              class="produtoImg"
+              src="imagens/pexels-brettjordan-28867504-thumbnail.jpg"
+              alt="Garrafa de Vinho Branco 2 com copo de vidro em frente a uma parede de tijolo."
+            />
+            <figcaption class="produtoCaption">
+              Garrafa de Vinho Branco 2
+            </figcaption>
+          </figure>
+          <figure class="produtoCard">
+            <img
+              class="produtoImg"
+              src="imagens/pexels-brettjordan-29256524-thumbnail.jpg"
+              alt="Garrafa de Vinho Branco 3 com copo de vidro em frente a uma parede de tijolo."
+            />
+            <figcaption class="produtoCaption">
+              Garrafa de Vinho Branco 3
+            </figcaption>
+          </figure>
+          <figure class="produtoCard">
+            <img
+              class="produtoImg"
+              src="imagens/pexels-brettjordan-20644769-thumbnail.jpg"
+              alt="Garrafa de Vinho Tinto 2 com copo de vidro em frente a uma parede de tijolo."
+            />
+            <figcaption class="produtoCaption">
+              Garrafa de Vinho Tinto 2
+            </figcaption>
+          </figure>
+          <figure class="produtoCard">
+            <img
+              class="produtoImg"
+              src="imagens/pexels-brettjordan-16797514-thumbnail.jpg"
+              alt="Garrafa de Vinho Tinto 4 com copo de vidro em frente a uma parede de tijolo."
+            />
+            <figcaption class="produtoCaption">
+              Garrafa de Vinho Tinto 4
+            </figcaption>
+          </figure>
+        </div>
+        <!-- formulário para pedir informações sobre os produtos -->
+        <button id="botaoInfo" class="botao">Peça informações</button>
+      </section>
+      <!-- Imagem decorativa como separador de secções -->
+      <img
+        class="separadorImg"
+        src="imagens/garrafas-separadorImg.jpg"
+        alt="Imagem decorativa de garrafas de vinho alinhadas numa garrafeira."
+      />
+      <!-- CONTACTOS -->
+      <section id="contactos">
+        <div class="mapaContactos">
+          <h3>Contactos</h3>
+          <p class="subtitulo">Onde estamos</p>
+          <!-- Google Maps -->
+          <iframe
+            class="mapa"
+            title="Mapa com a localização da Casa Natário em Aldeia da Ponte"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48604.56620129535!2d-6.906104918760682!3d40.41360489303872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3db32305eb9937%3A0xfcd8160e53183c6f!2sAldeia%20da%20Ponte%2C%206320-031%20Sabugal!5e0!3m2!1spt-PT!2spt!4v1766777252846!5m2!1spt-PT!2spt"
+            width="650"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+        <!-- Links de contactos (ainda simulados) -->
+        <div class="linksContactos">
+          <ul>
+            <li>
+              <a href="mailto:info@email.pt">
+                <i class="fa-solid fa-at" aria-hidden="true"></i>
+                info@email.pt
+              </a>
+            </li>
+            <li>
+              <a href="tel:+351272000000">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                +351 272 ??? ???
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/domeupai"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                @domeupai
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 'Stock Video' até ter o vídeo corporativo (talvez carregar por iframes nessa altura)-->
+      <section class="videoCorp">
+        <video width="800px" height="auto" controls>
+          <source src="videos/31530-387662282_small.mp4" type="video/mp4" />
+          <!-- WCAG exige legendas se houver áudio com fala
+          <track
+            kind="captions"
+            srclang="pt"
+            src="legendas.vtt"
+            label="Português"
+          /> -->
+          O seu navegador não suporta vídeo.
+        </video>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <!-- Footer Top -->
+      <section class="footerTop">
+        <!-- Logo -->
+        <img
+          src="imagens/logo-branco.svg"
+          width="280"
+          alt="Logótipo do vinho 'Do Meu Pai' em branco com fundo transparente"
+        />
+        <!-- Formulário de contacto -->
+        <form id="formFooter" onsubmit="enviarForm(event)">
+          <h4>Entre em contacto connosco:</h4>
+          <fieldset class="nomeCampos">
+            <div class="campo">
+              <label for="footer-nome">
+                Nome: <span aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="footer-nome"
+                name="nome"
+                placeholder="Nome"
+                autocomplete="given-name"
+                required
+              />
+            </div>
+            <div class="campo">
+              <label for="footer-apelido">
+                Apelido: <span aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="footer-apelido"
+                name="apelido"
+                placeholder="Apelido"
+                autocomplete="family-name"
+                required
+              />
+            </div>
+          </fieldset>
+          <label for="footer-email">
+            Email: <span aria-hidden="true">*</span>
+          </label>
+          <input
+            type="email"
+            id="footer-email"
+            name="email"
+            placeholder="Email"
+            autocomplete="email"
+            required
+          />
+          <label for="footer-assunto">
+            Assunto: <span aria-hidden="true">*</span>
+          </label>
+          <input
+            type="text"
+            id="footer-assunto"
+            name="assunto"
+            placeholder="Assunto"
+            autocomplete="off"
+            required
+          />
+          <label for="footer-mensagem">
+            Mensagem: <span aria-hidden="true">*</span>
+          </label>
+          <textarea
+            id="footer-mensagem"
+            name="mensagem"
+            rows="5"
+            placeholder="Mensagem"
+            autocomplete="off"
+            required>
+          </textarea>
+          <button type="submit" class="botao">Enviar</button>
+        </form>
+      </section>
+      <!-- Footer Middle -->
+      <nav class="footerMiddle" aria-label="Links legais">
+        <!-- Links legais (ainda vazios) -->
+        <ul>
+          <li><a href="#">Termos e Condições</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+        </ul>
+      </nav>
+      <!-- Footer Bottom -->
+      <section class="footerBottom">
+        <!-- Copyright -->
+        <p>Vinhos DOMEUPAI &copy; 2023 - <span id="current-year"></span></p>
+        <p>Todos os direitos reservados</p>
+      </section>
+    </footer>
+    <!-- MODAL - FORMULÁRIO PARA INFORMAÇÕES -->
+    <div
+      id="modalInfo"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitulo">
+      <div class="modal-content">
+        <!-- Botão para fechar o modal -->
+        <button id="closeInfo" class="fechar" aria-label="Fechar">
+          &times;
+        </button>
+        <h4 id="modalTitulo">Pedido de Informações</h4>
+        <!-- Formulário para informações -->
+        <form id="formInfo" onsubmit="enviarForm(event)">
+          <fieldset class="nomeCampos">
+            <div class="campo">
+              <label for="nome">Nome: <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Nome"
+                autocomplete="given-name"
+                required
+              />
+            </div>
+            <div class="campo">
+              <label for="apelido">
+                Apelido: <span aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="apelido"
+                name="apelido"
+                placeholder="Apelido"
+                autocomplete="family-name"
+                required
+              />
+            </div>
+          </fieldset>
+          <label for="email">Email: <span aria-hidden="true">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            autocomplete="email"
+            required
+          />
+          <!-- Campo assunto em drop down: -->
+          <label for="assunto">
+            Assunto: <span aria-hidden="true">*</span>
+          </label>
+          <select id="assunto" name="assunto" required>
+            <option value="" disabled selected hidden>
+              Selecione uma opção:
+            </option>
+            <option value="vinhoTds">Todos os Vinhos</option>
+            <option value="tinto">Vinhos Tintos</option>
+            <option value="branco">Vinhos Brancos</option>
+            <option value="outros">Outros Assuntos</option>
+          </select>
+          <!-- Acrescentar no futuro contagem de caractéres tipo 0/255 -->
+          <label for="mensagem">
+            Mensagem: <span aria-hidden="true">*</span>
+          </label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            minlength="10"
+            placeholder="Mensagem"
+            autocomplete="off"
+            required>
+          </textarea>
+          <button type="submit" class="botao">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
