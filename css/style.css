@@ -482,6 +482,22 @@ footer {
   text-align: left;
   max-width: 45vw;
 }
+#formFooter .nomeCampos {
+  border: none;
+  display: flex;
+  font-size: 0.8rem;
+  color: #ad9c9d;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  padding: 0;
+}
+
+#formFooter .campo {
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+}
 
 #formFooter label {
   display: inline-block;
@@ -507,20 +523,6 @@ footer {
 #formFooter input::placeholder, #formFooter textarea::placeholder {
   color: #c4b5b6;
   font-family: inherit;
-}
-
-#formFooter .nomeCampos {
-  border: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-  padding: 0;
-}
-
-#formFooter .campo {
-  display: flex;
-  flex-direction: column;
 }
 
 #formFooter .botao {
@@ -644,6 +646,8 @@ footer {
 #formInfo .nomeCampos {
   border: none;
   display: flex;
+  font-size: 0.8rem;
+  color: #ad9c9d;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
@@ -651,6 +655,7 @@ footer {
 
 #formInfo .campo {
   display: flex;
+  color: #ffffff;
   flex-direction: column;
 }
 
