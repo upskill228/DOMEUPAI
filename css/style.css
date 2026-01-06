@@ -66,7 +66,7 @@ p {
   color: #ffffff;
 }
 
-label span { /* estilo do '*' nos campos required dos formulários */
+label span { /* estilo do '*' nos campos required dos formulários */
   color: #D76A6E;
 }
 
@@ -100,14 +100,20 @@ label span { /* estilo do '*' nos campos required dos formulários */
 /* Header */
 .cabecalho { /* cabeçalho sem fundo - inicial */
   position: fixed;
-  inset: 0 0 auto 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5rem;
   z-index: 99;
-  background-color: transparent;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0)
+  );
 }
 
 .logo img { /* sem logo (pequeno) pois tem a landing page tem logo maior */
@@ -124,6 +130,10 @@ label span { /* estilo do '*' nos campos required dos formulários */
 
 .menu-toggle span {
   display: none;
+}
+
+.navPrincipal {
+  z-index: 1000;
 }
 
 nav ul {
@@ -178,13 +188,15 @@ main {
 /* Landing Page */
 #intro {
   position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  min-height: 750px;
+  height: 100svh;
+  width: 100%;
 }
 
  /* Opção para melhorar visibilidade */
@@ -202,9 +214,10 @@ main {
 }
 
 .heroImg{
-  position: relative;
+  position: absolute;
   grid-area: 1 / 1 / 4 / 4;
-  height: 100vh;
+  min-height: 750px;
+  height: 100svh;
   width: 100%;
   object-fit: cover;
   object-position: top left;
@@ -232,7 +245,7 @@ main {
   z-index: 4;
 }
 
-/* Sobre Nós */
+/* Sobre Nós */
 #sobreNos {
   position: relative;
   display: grid;
@@ -240,8 +253,10 @@ main {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
-  min-height: 100svh;
-  width: 100vw;
+  min-height: 750px;
+  height: 100svh;
+  width: 100%;
+  scroll-margin-top: 50px;
   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -284,11 +299,12 @@ main {
   align-items: center;
   height: auto;
   min-height: 650px;
-  width: 100vw;
+  width: 100%;
   background-color: #000000; /* Fallback */
   background-image: url("../imagens/textura-fundo.jpg"); /* Imagem com padrão / textura de fundo que imita o padrão das garrafas */
   background-repeat: repeat;
   background-size: 300px;
+  scroll-margin-top: 50px;
   box-shadow: 0 -2px 8px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -385,7 +401,7 @@ main {
 
 .separadorImg { /* Imagem como separador entre secções */
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center;
@@ -403,7 +419,8 @@ main {
   min-height: 750px;
   height: auto;
   padding: 4rem 2rem;
-  width: 100vw;
+  width: 100%;
+  scroll-margin-top: 50px;
   box-shadow: 0 -2px 8px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -444,7 +461,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 750px;
-  width: 100vw;
+  width: 100%;
   background-color: #000000; /* Fallback */
   background-image: url("../imagens/textura-fundo.jpg"); /* Imagem com padrão / textura de fundo que imita o padrão das garrafas */
   background-repeat: repeat;
@@ -764,7 +781,7 @@ footer {
     padding: 0 1rem;
   }
 
-  /* Sobre Nós */
+  /* Sobre Nós */
   #sobreNos {
     display: flex;
     flex-direction: column;
@@ -891,7 +908,7 @@ footer {
   }
 }
 
-/* Figcaption para dispositivos que não suportam hover */
+/* Figcaption para dispositivos que não suportam hover */
 @media (hover: none) {
   .produtoCaption {
     opacity: 1;
