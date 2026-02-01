@@ -253,8 +253,7 @@ main {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
-  min-height: 750px;
-  height: 100svh;
+  min-height: 100svh;
   width: 100%;
   scroll-margin-top: 50px;
   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.7);
@@ -273,11 +272,14 @@ main {
 }
 
 .texto {
-  text-align: center;
+  text-align: justify;
   line-height: 1.6;
   font-size: clamp(1rem, 2vw, 1.1rem); /* clamp p/ adaptar o tamanho do texto ao tamanho da tela */
-  text-indent: 4ch;
   margin: 5% 20%;
+}
+
+.indent {
+  text-indent: 2ch;
 }
 
 /* Parallax - Efeito de movimento sobre a imagem */
